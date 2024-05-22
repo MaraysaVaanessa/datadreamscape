@@ -1,0 +1,309 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {
+    background-color: white; /* Fundo branco */
+    height: 100vh;
+}
+
+/* Estilos para a área de interface */
+.interface {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Estilos específicos para a logo */
+.logo img {
+    max-width: 80px; /* Reduzindo o tamanho máximo da imagem */
+    height: auto; 
+}
+
+/* Estilos para o cabeçalho */
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgb(131, 135, 138);
+    text-decoration: none;
+    display: inline-block;
+    transition: 1s;
+}
+
+header a:hover {
+    color: black; /* Texto preto ao passar o mouse */
+    transform: scale(1.3);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 50px;
+}
+
+.btncontato button {
+    padding: 13px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(13, 99, 228, 0.808);
+    border: 0;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+h2.titulo {
+    color: black; /* Texto preto */
+    font-size: 50px;
+    text-align: center;
+}
+
+h2.titulo samp {
+    color: blue;
+    font-weight: bold;
+}
+
+ button:hover, form .btnenviar input:hover{
+    box-shadow: 0px 0px 5px #0856cc7c;
+    transform: scale(1.1);
+}
+
+/*TOPO DO PORTIFOLIO */
+section.topo {
+    padding: 40px 4%;
+}
+
+section.topo .flex {
+    align-items: center;
+}
+
+.topo h1 {
+    color: black; /* Texto preto */
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.topo .txt-topo {
+    flex: 1; /* Ocupar o espaço restante */
+    text-align: left; /* Alinhar o texto à esquerda */
+    margin-top: 20px; /* Adicionado espaçamento acima */
+    margin-right: 20px; /* Adicionado espaçamento à direita */
+}
+
+
+.topo .txt-topo p {
+    color: black; /* Texto preto */
+    margin: 30px 0px;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.topo .txt-topo h1 samp {
+    color: blue;
+}
+
+.topo .img-topo-portiflolio {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.topo .img-topo-portiflolio img {
+    float: right;
+    margin-left: auto;
+    position: relative;
+    overflow: hidden;
+    filter: drop-shadow(0px 0px 30px rgba(18, 14, 219, 0.582));
+    animation: balao 2s ease-in-out infinite alternate;
+}
+
+@keyframes balao {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+/* ESTILO DO PORTFOLIO */
+section.Portfólio-Inicial {
+    padding: 40px 4%;
+}
+
+section.Portfólio-Inicial .flex{
+    gap: 60px;
+}
+
+.Portfólio-Inicial .PORTFÓLIO-BOX:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 8px #ffffff7e;
+}
+
+.Portfólio-Inicial .PORTFÓLIO-BOX {
+    color: black; /* Texto preto */
+    padding: 25px;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: .8s;
+}
+
+.Portfólio-Inicial .PORTFÓLIO-BOX i {
+    color: blue;
+    font-size: 55px;
+}
+
+.Portfólio-Inicial .PORTFÓLIO-BOX .flex-item h3 {
+    color: blue;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilo sobre */
+section.sobre {
+    padding: 40px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.txt-sobre {
+    color: black; /* Texto preto */
+}
+.txt-sobre h2 {
+    font-size: 40px;
+}
+
+.txt-sobre h2 span {
+    color: blue;
+}
+.txt-sobre .texto {
+    text-align: left; /* Alinhar o texto à esquerda */
+    margin-top: 20px; /* Adicionar espaçamento acima */
+}
+
+.txt-sobre p {
+    margin-bottom: 20px; /* Adicionar espaçamento abaixo */
+}
+ button{
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    border: none;
+    background-color: blue;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .5s;
+
+}
+
+section.formulario{
+    padding: 60px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+
+}
+form input, form textarea{
+    width: 100%;
+    background-color:rgba(160, 160, 151, 0.233);
+    border: none;
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+form textarea {
+    resize: none;
+}
+
+form input::placeholder{
+    color: blue;
+}
+
+form input, form textarea::placeholder{
+    color: blue;
+}
+form .btnenviar{
+    margin: 10px;
+    text-align: center;
+}
+
+form .btnenviar input{
+    width: 150px;
+    background-color: blue;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/*ESTILO DO RODA PE*/
+
+footer{
+    padding: 60px 4%;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+.borda{
+    border-top: 2px solid blue;
+}
+
+footer .line-footer p i{
+    color: blue;
+    font-size: 20px;
+}
+footer .line-footer p a{
+    color: black;
+}
+@media screen and (max-width: 1020px){
+
+/*Clase geral*/
+.flex{
+    flex-direction: column-reverse;
+}
+    .Menu-desktop, btncontato{
+        display: none;
+    }
+}
+
+/*topo*/
+
+section.topo {
+    padding: 20px 8%;
+}
+
+.topo h1 {
+    color: black; /* Texto preto */
+    font-size: 32px;
+}
